@@ -1,0 +1,9 @@
+ul{
+    background-color: aquamarine;
+
+}
+
+li{
+    display: inline;
+    margin: 20px;
+}

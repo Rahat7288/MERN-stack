@@ -1,6 +1,15 @@
+// importing the http modules to use
 const http = require('http')
-
+// creating the server
 http.createServer(function(req, res){
-    res.end('hello world from server')
-}).listen(3000)
-
+    // routes for node
+    if(req === '/'){
+        res.end('hello to new home')
+    }
+    else if(req === '/game'){
+        res.end('hello form game page')
+    }
+    else if(req === '/user'){
+        res.end('hello from users')
+    }
+}).listen(5000)
